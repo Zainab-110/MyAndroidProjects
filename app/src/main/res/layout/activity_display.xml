@@ -117,6 +117,37 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/dMail"
                 app:layout_constraintVertical_bias="0.050000012" />
+            <TextView
+                android:id="@+id/dtClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="150dp"
+                android:text="Ticket Class:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/brown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/dtMembers"
+                app:layout_constraintVertical_bias="0.050000012" />
+            <TextView
+                android:id="@+id/dClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/brown"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/dtClass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/dMembers"
+                app:layout_constraintVertical_bias="0.050000012" />
 
             <TextView
                 android:id="@+id/dtFrom"
@@ -132,7 +163,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/dtMembers"
+                app:layout_constraintTop_toTopOf="@id/dtClass"
                 app:layout_constraintVertical_bias="0.050000012" />
             <TextView
                 android:id="@+id/dFrom"
@@ -147,7 +178,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/dtFrom"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/dMembers"
+                app:layout_constraintTop_toTopOf="@id/dClass"
                 app:layout_constraintVertical_bias="0.050000012" />
             <TextView
                 android:id="@+id/dtTo"

@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btn1 = findViewById(R.id.btnNext);
         flagnom = 0;
         flagMail = 0;
-        flagTkt = 0;
+        flagTkt = 1;
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     i.putExtra("NAME",name.getText().toString());
                     i.putExtra("EMAIL",email1);
                     i.putExtra("MEMBERS",members.getText().toString());
+                    i.putExtra("CLASS",ticketclass);
                     startActivity(i);
                 }
                 else {
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-
+                ticket.setText(ticketclass);
                 dialog.dismiss();
             }
         });
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 flagTkt = 1;
-                ticket.clearFocus();
+                ticket.setText("Select Ticket Class ");
             }
         });
         builder.show();

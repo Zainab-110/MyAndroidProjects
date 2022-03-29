@@ -34,6 +34,7 @@ public class second_login_page extends AppCompatActivity
         strName = getIntent().getStringExtra("NAME");
         strMail = getIntent().getStringExtra("EMAIL");
         strNOM = getIntent().getStringExtra("MEMBERS");
+        str = getIntent().getStringExtra("CLASS");
 
         //the two spinners 'to' and 'from'
         Spinner spin = (Spinner) findViewById(R.id.spinner);
