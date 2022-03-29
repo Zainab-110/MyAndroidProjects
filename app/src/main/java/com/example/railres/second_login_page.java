@@ -113,6 +113,7 @@ public class second_login_page extends AppCompatActivity
                     i1.putExtra("MEMBERS",strNOM);
                     i1.putExtra("FROM",str_From);
                     i1.putExtra("TO",str_To);
+                    i1.putExtra("CLASS",str);
                     i1.putExtra("DATE",tvDate.getText().toString());
                     i1.putExtra("TIME",tvTime.getText().toString());
                     startActivity(i1);

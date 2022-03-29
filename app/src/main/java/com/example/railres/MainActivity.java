@@ -98,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton("Proceed", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                ticket.setText(ticketclass);
                 dialog.dismiss();
             }
         });
